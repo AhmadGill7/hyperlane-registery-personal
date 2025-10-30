@@ -1,0 +1,14 @@
+ bsctestnet:
+      type: collateral
+      token: "0xb97aDD318e75F98972f95323ce0A035E31784c4E"
+      owner: "0x4f0b4c4c23E31f3e5bCCEfFb649AfdE964B7dF50"
+      proxyAdmin:
+        owner: "0xfaD1C94469700833717Fa8a3017278BC1cA8031C"
+        address: "0xb12282d2E838Aa5f2A4F9Ee5f624a77b7199A078"
+ kasplextestnet:
+      isNft: false
+      type: synthetic
+      owner: "0x4f0b4c4c23E31f3e5bCCEfFb649AfdE964B7dF50"
+      proxyAdmin:
+        owner: "0x4f0b4c4c23E31f3e5bCCEfFb649AfdE964B7dF50"
+        address: "0x0FB4492F2214b72aC6bd7561317f1613e7542Bd5"
