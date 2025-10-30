@@ -1,0 +1,30 @@
+# Complete Core Deployment Configuration for Kasplex Testnet
+# This matches the BSC Testnet deployment structure
+
+owner: "0x4f0b4c4c23E31f3e5bCCEfFb649AfdE964B7dF50"
+
+# Default ISM - using trusted relayer for simplicity
+defaultIsm:
+  type: trustedRelayerIsm
+  relayer: "0x4f0b4c4c23E31f3e5bCCEfFb649AfdE964B7dF50"
+
+# Default Hook - aggregation of multiple hooks
+defaultHook:
+  type: aggregationHook
+  hooks:
+    - type: merkleTreeHook
+    - type: interchainGasPaymaster
+      beneficiary: "0x4f0b4c4c23E31f3e5bCCEfFb649AfdE964B7dF50"
+      oracleKey: "0x4f0b4c4c23E31f3e5bCCEfFb649AfdE964B7dF50"
+
+# Required Hook - protocol fee
+requiredHook:
+  type: protocolFee
+  owner: "0x4f0b4c4c23E31f3e5bCCEfFb649AfdE964B7dF50"
+  beneficiary: "0x4f0b4c4c23E31f3e5bCCEfFb649AfdE964B7dF50"
+  maxProtocolFee: "100000000000000000"
+  protocolFee: "0"
+
+# Proxy Admin configuration
+proxyAdmin:
+  owner: "0x4f0b4c4c23E31f3e5bCCEfFb649AfdE964B7dF50"
