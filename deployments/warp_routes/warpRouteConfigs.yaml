@@ -7769,6 +7769,7 @@ USDT/kasplextestnet:
       decimals: 18
       name: Tether USD
       standard: EvmHypSynthetic
+      symbol: USDT
     - addressOrDenom: "0x33040822048AF695dFC056023443732AD39Feb97"
       chainName: bsctestnet
       collateralAddressOrDenom: "0xb97aDD318e75F98972f95323ce0A035E31784c4E"
