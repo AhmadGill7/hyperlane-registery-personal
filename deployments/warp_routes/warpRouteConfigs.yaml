@@ -7760,6 +7760,24 @@ USDT/incentiv:
       name: Tether USD
       standard: EvmHypSynthetic
       symbol: USDT
+USDT/kasplextestnet:
+  tokens:
+    - addressOrDenom: "0x2DfA8C344Ed0070008651A4bE513D7f035c3d9ED"
+      chainName: kasplextestnet
+      connections:
+        - token: ethereum|bsctestnet|0x33040822048AF695dFC056023443732AD39Feb97
+      decimals: 18
+      name: Tether USD
+      standard: EvmHypSynthetic
+    - addressOrDenom: "0x33040822048AF695dFC056023443732AD39Feb97"
+      chainName: bsctestnet
+      collateralAddressOrDenom: "0xb97aDD318e75F98972f95323ce0A035E31784c4E"
+      connections:
+        - token: ethereum|kasplextestnet|0x2DfA8C344Ed0070008651A4bE513D7f035c3d9ED
+      decimals: 18
+      name: Tether USD
+      standard: EvmHypCollateral
+      symbol: USDT
 USDT/mantra:
   tokens:
     - addressOrDenom: "0xA95d1a59cF9Be8A53fECeA7CbB5BD6E6B1bC1060"
