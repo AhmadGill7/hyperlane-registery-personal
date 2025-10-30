@@ -1,0 +1,33 @@
+# Combined deployment configuration for Kasplex Testnet
+chains:
+  kasplextestnet:
+    # Chain metadata
+    chainId: 167012
+    displayName: kasplextestnet
+    domainId: 167012
+    isTestnet: true
+    name: kasplextestnet
+    nativeToken:
+      decimals: 18
+      name: KASPA
+      symbol: KAS
+    protocol: ethereum
+    rpcUrls:
+      - http: https://rpc.kasplextest.xyz
+    technicalStack: other
+    
+    # Deployment configuration
+    owner: "0x4f0b4c4c23E31f3e5bCCEfFb649AfdE964B7dF50"
+    defaultIsm:
+      type: trustedRelayerIsm
+      relayer: "0x4f0b4c4c23E31f3e5bCCEfFb649AfdE964B7dF50"
+    defaultHook:
+      type: merkleTreeHook
+    requiredHook:
+      type: protocolFee
+      owner: "0x4f0b4c4c23E31f3e5bCCEfFb649AfdE964B7dF50"
+      beneficiary: "0x4f0b4c4c23E31f3e5bCCEfFb649AfdE964B7dF50"
+      maxProtocolFee: "100000000000000000"
+      protocolFee: "0"
+    proxyAdmin:
+      owner: "0x4f0b4c4c23E31f3e5bCCEfFb649AfdE964B7dF50"
