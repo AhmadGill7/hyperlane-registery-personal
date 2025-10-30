@@ -1,13 +1,25 @@
-staticMerkleRootMultisigIsmFactory: "0x21906C2F5602f21856b84208E7cC47403Fd13379"
-staticMessageIdMultisigIsmFactory: "0x09Df701f1f5df83A3BbEf7DA4e74Bb075199d6A4"
-staticAggregationIsmFactory: "0x0c3e1B2966d6914AADD57C0A74c087b682f8625D"
-staticAggregationHookFactory: "0xDCC88254cbaeb10673A01F9077271261E284C02D"
-domainRoutingIsmFactory: "0xa11bF3284772ed76d2E3522A4f30B904C7b96b98"
-staticMerkleRootWeightedMultisigIsmFactory: "0xFE04C3B9a89C8F316DD0C26112d27e9924f5665A"
-staticMessageIdWeightedMultisigIsmFactory: "0x076955743488923A0727addFA82e11A8b5e859c1"
-proxyAdmin: "0x032251627aad2c193deEBa643008600b1701124D"
-mailbox: "0xD1525C92D62F4765Cb5A3F05a6De8008E8BF807e"
-interchainAccountRouter: "0x07a28475d982f7BC54342F3EdC7e0D48204D7447"
+# ISM Factories
+staticMerkleRootMultisigIsmFactory: "0x7D65A508668cC52B53399Bf20621312c931A8732"
+staticMessageIdMultisigIsmFactory: "0x40A0Fc28582b3b08450A76d3674F5039054aAE94"
+staticAggregationIsmFactory: "0xebCA33799b3e110a832B2a566D39AD5eA1f2DC0c"
+staticAggregationHookFactory: "0x36436E58084E89b0148A37f878477899c1cD249d"
+domainRoutingIsmFactory: "0xacd589dfF94b21C40dC9D3625bf7f5F1DdDeb9c2"
+staticMerkleRootWeightedMultisigIsmFactory: "0x5f46a9665Cc92CC3899B1b4BB372Ec784C240B90"
+staticMessageIdWeightedMultisigIsmFactory: "0x199BCff2c2417D77C76b5250Bf5782641F85d2F0"
+
+# Core Contracts
+proxyAdmin: "0x0FB4492F2214b72aC6bd7561317f1613e7542Bd5"
+mailbox: "0xC505a8B225D46eB5252D96549C074e70855Fe4F3"
 validatorAnnounce: "0xc16287c8880c9Ab8b542846d321ec2DC90EF6993"
+
+# ISM and Hooks
+interchainSecurityModule: "0x8E9C4947bf2249171d1C75118c362B37fEcC4E5C"
+merkleTreeHook: "0xAC9c2c6F90B60FDe2794EeCe06dE6a51CF3Ad3fc"
+
+# Gas Oracle and IGP
+storageGasOracle: "0x4e35Ca6865ea4F113Ec3b1a8353eb66b6Aa1c1Ca"
+interchainGasPaymaster: "0x69fF361BE6dBD5B7F040E7656d3E9f01063B2f2a"
+
+# Test Contracts  
 testRecipient: "0xcA9caDDf76CCa01c6D369f8228a6B95A9F5fE801"
-merkleTreeHook: "0x9e4ff375aB791708dfD3Fc10D3EB3D5B2E6664b3"
+interchainAccountRouter: "0x07a28475d982f7BC54342F3EdC7e0D48204D7447"
