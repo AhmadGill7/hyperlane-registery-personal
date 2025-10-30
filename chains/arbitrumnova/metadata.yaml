@@ -1,0 +1,27 @@
+blockExplorers:
+  - apiUrl: https://api-nova.arbiscan.io/api
+    family: etherscan
+    name: Arbiscan Nova
+    url: https://nova.arbiscan.io/
+blocks:
+  confirmations: 1
+  estimateBlockTime: 2
+  reorgPeriod: 5
+chainId: 42170
+deployer:
+  name: Abacus Works
+  url: https://www.hyperlane.xyz
+displayName: Arbitrum Nova
+domainId: 42170
+gasCurrencyCoinGeckoId: ethereum
+index:
+  from: 78794208
+name: arbitrumnova
+nativeToken:
+  decimals: 18
+  name: Ethereum
+  symbol: ETH
+protocol: ethereum
+rpcUrls:
+  - http: https://nova.arbitrum.io/rpc
+technicalStack: arbitrumnitro

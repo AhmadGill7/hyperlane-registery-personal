@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../schema.json
+blockExplorers:
+  - apiUrl: https://explorer.testnet.kasplextest.xyz/api
+    family: blockscout
+    name: Kasplex Explorer
+    url: https://explorer.testnet.kasplextest.xyz/
+blocks:
+  confirmations: 1
+  estimateBlockTime: 3
+  reorgPeriod: 9
+chainId: 167012
+deployer:
+  name: Kaspa Finance # Replace with your organization name
+  url: https://app.kaspafinance.io # Replace with your URL
+displayName: Kasplex Testnet
+domainId: 167012 # Replace with actual domain ID (usually same as chainId)
+gasCurrencyCoinGeckoId: kaspa # Replace if Kasplex has its own token on CoinGecko
+isTestnet: true
+name: kasplextestnet
+nativeToken:
+  decimals: 18
+  name: Kaspa # Replace with actual native token name
+  symbol: KAS # Replace with actual token symbol
+protocol: ethereum # Assuming it's EVM-compatible
+rpcUrls:
+  - http: https://rpc.kasplextest.xyz # Replace with actual RPC URL
