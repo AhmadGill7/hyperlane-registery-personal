@@ -1,0 +1,27 @@
+{
+    "chains": {
+        "kasplextestnet": {
+            "customRpcUrls": "https://rpc.kasplextest.xyz",
+            "blocks": {
+                "reorgPeriod": 1
+            },
+            "signer": {
+                "type": "hexKey",
+                "key": "0xda6ecf6ab4007ef6cb3133ca874be8fb84db39fd46a866a820c70c72642e6847"
+            }
+        }
+    },
+    "validator": {
+        "type": "hexKey",
+        "key": "0xda6ecf6ab4007ef6cb3133ca874be8fb84db39fd46a866a820c70c72642e6847"
+    },
+    "checkpointSyncer": {
+        "type": "localStorage",
+        "path": "./hyperlane-validator-signatures-kasplextestnet"
+    },
+    "db": "./hyperlane-db-kasplextestnet",
+    "originChainName": "kasplextestnet",
+    "metrics": {
+        "port": 9091
+    }
+}

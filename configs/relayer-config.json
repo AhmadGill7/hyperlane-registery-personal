@@ -1,0 +1,24 @@
+{
+  "chains": {
+    "bsctestnet": {
+      "customRpcUrls": "https://bsc-testnet.publicnode.com,https://data-seed-prebsc-1-s1.binance.org:8545",
+      "signer": {
+        "type": "hexKey",
+        "key": "0xda6ecf6ab4007ef6cb3133ca874be8fb84db39fd46a866a820c70c72642e6847"
+      }
+    },
+    "kasplextestnet": {
+      "customRpcUrls": "https://rpc.kasplextest.xyz",
+      "signer": {
+        "type": "hexKey",
+        "key": "0xda6ecf6ab4007ef6cb3133ca874be8fb84db39fd46a866a820c70c72642e6847"
+      }
+    }
+  },
+  "db": "./hyperlane-db-relayer",
+  "relayChains": "bsctestnet,kasplextestnet",
+  "allowLocalCheckpointSyncers": true,
+  "metrics": {
+    "port": 9092
+  }
+}

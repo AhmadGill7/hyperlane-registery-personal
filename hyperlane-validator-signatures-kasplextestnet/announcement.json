@@ -1,0 +1,14 @@
+{
+  "value": {
+    "validator": "0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50",
+    "mailbox_address": "0x000000000000000000000000c505a8b225d46eb5252d96549c074e70855fe4f3",
+    "mailbox_domain": 167012,
+    "storage_location": "file:///app/hyperlane-validator-signatures-kasplextestnet"
+  },
+  "signature": {
+    "r": "0xf574a2dc4ccf29ded936bb524c470e97dac86d1ce0c181ade4e23a9410bddc8b",
+    "s": "0x68b4e37314da8551f9d422c985e0137ae5d924cdd5030e79d0381a8e6b84396b",
+    "v": 28
+  },
+  "serialized_signature": "0xf574a2dc4ccf29ded936bb524c470e97dac86d1ce0c181ade4e23a9410bddc8b68b4e37314da8551f9d422c985e0137ae5d924cdd5030e79d0381a8e6b84396b1c"
+}

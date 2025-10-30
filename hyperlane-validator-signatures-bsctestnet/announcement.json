@@ -1,0 +1,14 @@
+{
+  "value": {
+    "validator": "0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50",
+    "mailbox_address": "0x000000000000000000000000f9f6f5646f478d5ab4e20b0f910c92f1ccc9cc6d",
+    "mailbox_domain": 97,
+    "storage_location": "file:///app/hyperlane-validator-signatures-bsctestnet"
+  },
+  "signature": {
+    "r": "0x17f4213db19550a1b8701ad1652a654a2857d126e6034b686e966e8675ef8811",
+    "s": "0x4c6b6204f6941d5e3dd2f97179e2a370080a4b18540190ce2c5dd5eca23d2962",
+    "v": 27
+  },
+  "serialized_signature": "0x17f4213db19550a1b8701ad1652a654a2857d126e6034b686e966e8675ef88114c6b6204f6941d5e3dd2f97179e2a370080a4b18540190ce2c5dd5eca23d29621b"
+}

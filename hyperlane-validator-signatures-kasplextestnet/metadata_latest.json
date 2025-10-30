@@ -1,0 +1,7 @@
+{
+  "git_sha": "385b3078e93f44fd8230b31ccfbfb159c3c3bf2a",
+  "rpcs": [
+    "0x702854cc0ab918465302dec5e80dca8522e0fc40fe6116bf22655ded38c42f1b"
+  ],
+  "allows_public_rpcs": false
+}
