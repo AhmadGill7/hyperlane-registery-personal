@@ -3,6 +3,7 @@
         standard: EvmHypSynthetic
         decimals: 18
         name: Tether USD
+        symbol: USDT
         addressOrDenom: "0x2DfA8C344Ed0070008651A4bE513D7f035c3d9ED"
         connections:
           - token: ethereum|bsctestnet|0x33040822048AF695dFC056023443732AD39Feb97
