@@ -36,4 +36,7 @@ docker run -it --rm \
   --chains.kasplextestnet.signer.key ${HYP_KEY} \
   --checkpointSyncer.type localStorage \
   --checkpointSyncer.path /app/hyperlane-validator-signatures-kasplextestnet \
+  --checkpointSyncer.period 300 \
+  --reorgPeriod 1 \
+  --interval 5 \
   --metrics-port 9091

@@ -34,10 +34,14 @@ docker run -it --rm \
   --relayChains bsctestnet,kasplextestnet \
   --chains.bsctestnet.signer.type hexKey \
   --chains.bsctestnet.signer.key ${HYP_KEY} \
-  --chains.bsctestnet.customRpcUrls https://bsc-testnet.publicnode.com \
+  --chains.bsctestnet.customRpcUrls https://bsc-testnet.publicnode.com,https://data-seed-prebsc-1-s1.binance.org:8545 \
+  --chains.bsctestnet.index.from 70650000 \
   --chains.kasplextestnet.signer.type hexKey \
   --chains.kasplextestnet.signer.key ${HYP_KEY} \
+  --chains.kasplextestnet.index.from 9400000 \
   --allowLocalCheckpointSyncers true \
   --defaultSigner.type hexKey \
   --defaultSigner.key ${HYP_KEY} \
+  --gasPaymentEnforcement '[{"type": "none"}]' \
+  --whitelist '[{"destinationDomain": ["167012", "97"], "senderAddress": "*", "recipientAddress": "*"}]' \
   --metrics-port 9092
