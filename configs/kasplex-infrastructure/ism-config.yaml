@@ -1,0 +1,26 @@
+# ISM (Interchain Security Module) Configuration
+#
+# This configuration defines how messages are validated on each chain
+# 
+# IMPORTANT: Update validator addresses with YOUR actual validator address
+# Get your validator address by deriving it from your validator private key
+
+# ISM for BSC Testnet - validates messages FROM Kasplex
+bsctestnet:
+  type: merkleRootMultisig
+  threshold: 1  # Number of validators required to sign (1 for single validator)
+  validators:
+    - "0xYOUR_VALIDATOR_ADDRESS_HERE"  # Replace with your actual validator address
+
+# ISM for Kasplex Testnet - validates messages FROM BSC Testnet
+kasplextestnet:
+  type: merkleRootMultisig
+  threshold: 1  # Number of validators required to sign (1 for single validator)
+  validators:
+    - "0xYOUR_VALIDATOR_ADDRESS_HERE"  # Replace with your actual validator address
+
+# Notes:
+# - For production, use multiple validators and set threshold > 1
+# - All validators in the list must be announced on-chain
+# - The validator address is derived from the validator's private key
+# - To get your validator address, use: cast wallet address --private-key <your-validator-key>

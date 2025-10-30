@@ -1,0 +1,26 @@
+{
+  "originChainName": "bsctestnet",
+  "validator": {
+    "type": "hexKey",
+    "key": "0xda6ecf6ab4007ef6cb3133ca874be8fb84db39fd46a866a820c70c72642e6847"
+  },
+  "checkpointSyncer": {
+    "type": "localStorage",
+    "path": "./validator-signatures-bsc"
+  },
+  "chains": {
+    "bsctestnet": {
+      "rpcUrls": [
+        {
+          "http": "https://bsc-testnet.publicnode.com"
+        },
+        {
+          "http": "https://bsc-testnet.drpc.org"
+        }
+      ],
+      "customRpcUrls": "https://bsc-testnet.publicnode.com"
+    }
+  },
+  "interval": 5,
+  "reorgPeriod": 9
+}

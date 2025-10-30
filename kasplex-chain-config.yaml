@@ -1,0 +1,25 @@
+# Deployment Configuration for Kasplex Testnet
+
+# Chain metadata override
+kasplextestnet:
+  chainId: 167012
+  domainId: 167012
+  name: kasplextestnet
+  displayName: Kasplex Testnet
+  protocol: ethereum
+  rpcUrls:
+    - http: https://rpc.kasplextest.xyz
+  nativeToken:
+    decimals: 18
+    name: Kaspa
+    symbol: KAS
+  isTestnet: true
+  blocks:
+    confirmations: 1
+    estimateBlockTime: 3
+    reorgPeriod: 9
+  blockExplorers:
+    - name: Kasplex Explorer
+      url: https://explorer.testnet.kasplextest.xyz/
+      apiUrl: https://explorer.testnet.kasplextest.xyz/api
+      family: blockscout

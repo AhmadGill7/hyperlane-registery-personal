@@ -1,0 +1,23 @@
+{
+  "originChainName": "kasplextestnet",
+  "validator": {
+    "type": "hexKey",
+    "key": "0xda6ecf6ab4007ef6cb3133ca874be8fb84db39fd46a866a820c70c72642e6847"
+  },
+  "checkpointSyncer": {
+    "type": "localStorage",
+    "path": "./validator-signatures-kasplex"
+  },
+  "chains": {
+    "kasplextestnet": {
+      "rpcUrls": [
+        {
+          "http": "https://rpc.kasplextest.xyz"
+        }
+      ],
+      "customRpcUrls": "https://rpc.kasplextest.xyz"
+    }
+  },
+  "interval": 5,
+  "reorgPeriod": 9
+}

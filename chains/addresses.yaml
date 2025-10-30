@@ -2310,6 +2310,7 @@ kalychain:
   staticMessageIdWeightedMultisigIsmFactory: "0xD25c4eFF21D453dDdAe3CBEc7884Da1062eEb73f"
   testRecipient: "0x98Ce29fAC5943Bd370317c7Ce2320029c4Ba3339"
   validatorAnnounce: "0xB038dDE315D8833D1208830C8327193d85455B04"
+kasplextestnet: null
 katana:
   aggregationHook: "0x5278c2a1797480E232FA3A5845D877Cf25BB2f89"
   domainRoutingIsm: "0xBD70Ea9D599a0FC8158B026797177773C3445730"

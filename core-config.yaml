@@ -1,0 +1,29 @@
+# Hyperlane Core Deployment Config for Kasplex Testnet
+# This file configures the deployment of Hyperlane core contracts
+
+# Chains to deploy to
+chains:
+  kasplextestnet:
+    # Owner of the contracts (your address)
+    owner: '0x4f0b4c4c23E31f3e5bCCEfFb649AfdE964B7dF50'  # Will be derived from your key
+    
+    # Multisig ISM configuration
+    defaultIsm:
+      type: staticAggregationIsm
+      modules:
+        - type: merkleRootMultisigIsm
+          threshold: 1
+          validators:
+            # Add your validator address here after you generate it
+            - '0x0000000000000000000000000000000000000000'
+    
+    # Hook configuration
+    defaultHook:
+      type: merkleTreeHook
+    
+    # Required hook configuration  
+    requiredHook:
+      type: protocolFee
+      beneficiary: '0x4f0b4c4c23E31f3e5bCCEfFb649AfdE964B7dF50'
+      maxProtocolFee: '100000000000000000' # 0.1 ETH in wei
+      protocolFee: '0'

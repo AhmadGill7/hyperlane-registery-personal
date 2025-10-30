@@ -1,0 +1,33 @@
+{
+  "relayChains": ["bsctestnet", "kasplextestnet"],
+  "chains": {
+    "bsctestnet": {
+      "mailbox": "0xF9F6F5646F478d5ab4e20B0F910C92F1CCC9Cc6D",
+      "rpcUrls": [
+        {
+          "http": "https://bsc-testnet.publicnode.com"
+        }
+      ],
+      "customRpcUrls": "https://bsc-testnet.publicnode.com"
+    },
+    "kasplextestnet": {
+      "mailbox": "UPDATE_THIS_AFTER_DEPLOYMENT",
+      "rpcUrls": [
+        {
+          "http": "https://rpc.kasplextest.xyz"
+        }
+      ],
+      "customRpcUrls": "https://rpc.kasplextest.xyz"
+    }
+  },
+  "gasPaymentEnforcement": [
+    {
+      "type": "none"
+    }
+  ],
+  "allowLocalCheckpointSyncers": true,
+  "db": "./relayer-db",
+  "metrics": {
+    "port": 9090
+  }
+}
