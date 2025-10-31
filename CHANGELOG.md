@@ -1,5 +1,37 @@
 # @hyperlane-xyz/registry
 
+## 23.5.0
+
+### Minor Changes
+
+- bad608f: update pulsechain usdc route to add avalanche, optimism and unichain
+- bad608f: Added BNB <-> hBNB warp route, BSC to Radix
+- bad608f: Remove custom ISM from initially deployed Warp Routes.
+- bad608f: Add USDC/incentiv artifacts
+- bad608f: Update EZETH configs to include plasma
+- bad608f: Add mantra usdc deployment artifacts
+- bad608f: Add CENT/incentiv artifacts
+- bad608f: Add USDCSTAGE/eclipsemainnet route
+- bad608f: Add WETH/incentiv yield route
+- bad608f: Add Warden Protocol
+- bad608f: Add incentiv USDT yield route
+- bad608f: Add WBTC/incentiv warp route artifacts
+- bad608f: Update to new staticAggregationHookFactory implementation, update default hooks.
+- bad608f: Add LITKEY warp route deployment artifacts
+- bad608f: Deploy to sovachain. Deprecate proofofplay.
+- bad608f: Add ustd/mantra warp route deployment artifacts
+- bad608f: Add CARR configs and logo
+
+### Patch Changes
+
+- bad608f: Add missing entries to Radix addresses to comply with Zod schema.
+- bad608f: Update incentiv RPC url
+- bad608f: Deploy USDC/radix
+- bad608f: Update incentiv owner to SAFE
+- bad608f: feat: Add mUSD route config
+- bad608f: Remove arbitrum leg from CARR/carrchain
+- bad608f: Update incentiv logo with correct one
+
 ## 23.4.0
 
 ### Minor Changes
