@@ -1,0 +1,147 @@
+🔐 Starting Kasplex Testnet Validator...
+📍 Validator Address: 0x4f0b4c4c23E31f3e5bCCEfFb649AfdE964B7dF50
+
+Validator starting up...
+Agent validator starting up with version 385b3078e93f44fd8230b31ccfbfb159c3c3bf2a
+  [2m2025-10-31T09:59:28.606330Z[0m [32m INFO[0m [1;32mhyperlane_base::db::rocks[0m[32m: [32mOpening existing db, [1;32mpath[0m[32m: /app/hyperlane-db-kasplextestnet[0m
+    [2;3mat[0m hyperlane-base/src/db/rocks/mod.rs:51
+    [2;3min[0m hyperlane_base::db::rocks::[1mfrom_path[0m [2;3mwith[0m [1mdb_path[0m: "/app/hyperlane-db-kasplextestnet"
+
+  [2m2025-10-31T09:59:29.599471Z[0m [32m INFO[0m [1;32mvalidator::server::eigen_node[0m[32m: [32mServing the EigenNodeAPI routes...[0m
+    [2;3mat[0m agents/validator/src/server/eigen_node.rs:68
+
+  [2m2025-10-31T09:59:29.604152Z[0m [32m INFO[0m [1;32mhyperlane_base::server::base_server[0m[32m: [32mstarting server on 0.0.0.0, [1;32mport[0m[32m: 9091[0m
+    [2;3mat[0m hyperlane-base/src/server/base_server.rs:31
+    [2;3min[0m validator::validator::[1mValidator server[0m
+
+  [2m2025-10-31T09:59:29.613671Z[0m [32m INFO[0m [1;32mvalidator::validator[0m[32m: [32mChecking for validator announcement[0m
+    [2;3mat[0m agents/validator/src/validator.rs:401
+
+  [2m2025-10-31T09:59:29.940370Z[0m [32m INFO[0m [1;32mvalidator::validator[0m[32m: [32mValidator has not announced signature storage location, [1;32mannounced_locations[0m[32m: [][0m
+    [2;3mat[0m agents/validator/src/validator.rs:419
+
+  [2m2025-10-31T09:59:29.940609Z[0m [32m INFO[0m [1;32mvalidator::validator[0m[32m: [32mAttempting self announce, [1;32meth_validator_address[0m[32m: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, [1;32mchain_signer[0m[32m: "4f0b4c4c23e31f3e5bcceffb649afde964b7df50"[0m
+    [2;3mat[0m agents/validator/src/validator.rs:429
+
+  [2m2025-10-31T09:59:30.105198Z[0m [31mERROR[0m [1;31mhyperlane_ethereum::rpc_clients[0m[31m: [31mNon-retryable JsonRpcError in http provider, [1;31merror[0m[31m: (code: 3, message: execution reverted: !signature, data: Some(String("0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a217369676e617475726500000000000000000000000000000000000000000000")))[0m
+    [2;3mat[0m chains/hyperlane-ethereum/src/rpc_clients/mod.rs:89
+    [2;3min[0m hyperlane_ethereum::rpc_clients::fallback::[1mfallback_request[0m [2;3mwith[0m [1mfallback_count[0m: 0, [1mprovider_index[0m: 0, [1mprovider[0m: PrometheusJsonRpcClient(Http { id: 4, url: https://rpc.kasplextest.xyz/ })
+    [2;3min[0m hyperlane_ethereum::rpc_clients::fallback::[1mrequest[0m [2;3mwith[0m [1mmethod[0m: "eth_estimateGas"
+    [2;3min[0m hyperlane_ethereum::contracts::validator_announce::[1mannounce_tokens_needed[0m [2;3mwith[0m [1mannouncement[0m: SignedType { value: Announcement { validator: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, mailbox_address: 0x000000000000000000000000c505a8b225d46eb5252d96549c074e70855fe4f3, mailbox_domain: 167012, storage_location: file:///app/hyperlane-validator-signatures-kasplextestnet }, signature: 0xf574a2dc4ccf29ded936bb524c470e97dac86d1ce0c181ade4e23a9410bddc8b68b4e37314da8551f9d422c985e0137ae5d924cdd5030e79d0381a8e6b84396b1c }
+
+  [2m2025-10-31T09:59:30.105551Z[0m [32m INFO[0m [1;32mhyperlane_ethereum::contracts::validator_announce[0m[32m: [1;32mreturn[0m[32m: None[0m
+    [2;3mat[0m chains/hyperlane-ethereum/src/contracts/validator_announce.rs:152
+    [2;3min[0m hyperlane_ethereum::contracts::validator_announce::[1mannounce_tokens_needed[0m [2;3mwith[0m [1mannouncement[0m: SignedType { value: Announcement { validator: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, mailbox_address: 0x000000000000000000000000c505a8b225d46eb5252d96549c074e70855fe4f3, mailbox_domain: 167012, storage_location: file:///app/hyperlane-validator-signatures-kasplextestnet }, signature: 0xf574a2dc4ccf29ded936bb524c470e97dac86d1ce0c181ade4e23a9410bddc8b68b4e37314da8551f9d422c985e0137ae5d924cdd5030e79d0381a8e6b84396b1c }
+
+  [2m2025-10-31T09:59:30.264404Z[0m [31mERROR[0m [1;31mhyperlane_ethereum::rpc_clients[0m[31m: [31mNon-retryable JsonRpcError in http provider, [1;31merror[0m[31m: (code: 3, message: execution reverted: !signature, data: Some(String("0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a217369676e617475726500000000000000000000000000000000000000000000")))[0m
+    [2;3mat[0m chains/hyperlane-ethereum/src/rpc_clients/mod.rs:89
+    [2;3min[0m hyperlane_ethereum::rpc_clients::fallback::[1mfallback_request[0m [2;3mwith[0m [1mfallback_count[0m: 0, [1mprovider_index[0m: 0, [1mprovider[0m: PrometheusJsonRpcClient(Http { id: 5, url: https://rpc.kasplextest.xyz/ })
+    [2;3min[0m hyperlane_ethereum::rpc_clients::fallback::[1mrequest[0m [2;3mwith[0m [1mmethod[0m: "eth_estimateGas"
+    [2;3min[0m hyperlane_ethereum::contracts::validator_announce::[1mannounce[0m [2;3mwith[0m [1mannouncement[0m: SignedType { value: Announcement { validator: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, mailbox_address: 0x000000000000000000000000c505a8b225d46eb5252d96549c074e70855fe4f3, mailbox_domain: 167012, storage_location: file:///app/hyperlane-validator-signatures-kasplextestnet }, signature: 0xf574a2dc4ccf29ded936bb524c470e97dac86d1ce0c181ade4e23a9410bddc8b68b4e37314da8551f9d422c985e0137ae5d924cdd5030e79d0381a8e6b84396b1c }
+
+  [2m2025-10-31T09:59:30.265266Z[0m [31mERROR[0m [1;31mhyperlane_ethereum::contracts::validator_announce[0m[31m: [1;31merror[0m[31m: (code: 3, message: execution reverted: !signature, data: Some(String("0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a217369676e617475726500000000000000000000000000000000000000000000")))[0m
+    [2;3mat[0m chains/hyperlane-ethereum/src/contracts/validator_announce.rs:174
+    [2;3min[0m hyperlane_ethereum::contracts::validator_announce::[1mannounce[0m [2;3mwith[0m [1mannouncement[0m: SignedType { value: Announcement { validator: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, mailbox_address: 0x000000000000000000000000c505a8b225d46eb5252d96549c074e70855fe4f3, mailbox_domain: 167012, storage_location: file:///app/hyperlane-validator-signatures-kasplextestnet }, signature: 0xf574a2dc4ccf29ded936bb524c470e97dac86d1ce0c181ade4e23a9410bddc8b68b4e37314da8551f9d422c985e0137ae5d924cdd5030e79d0381a8e6b84396b1c }
+
+  [2m2025-10-31T09:59:30.265346Z[0m [31mERROR[0m [1;31mvalidator::validator[0m[31m: [31mFailed to announce validator. Make sure you have enough funds in your account to pay for gas., [1;31merr[0m[31m: ContractError(MiddlewareError(MiddlewareError(MiddlewareError(MiddlewareError(MiddlewareError(JsonRpcClientError(JsonRpcError(JsonRpcError { code: 3, message: "execution reverted: !signature", data: Some(String("0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a217369676e617475726500000000000000000000000000000000000000000000")) })))))))), [1;31mchain_signer[0m[31m: "4f0b4c4c23e31f3e5bcceffb649afde964b7df50"[0m
+    [2;3mat[0m agents/validator/src/validator.rs:363
+
+sleep 20 && tail -50 validator-startup.log | grep -E "(announce|signature|Successfully|Error|ERROR)" | head -20
+  [2m2025-10-31T09:59:35.267341Z[0m [32m INFO[0m [1;32mvalidator::validator[0m[32m: [32mChecking for validator announcement[0m
+    [2;3mat[0m agents/validator/src/validator.rs:401
+
+  [2m2025-10-31T09:59:35.436069Z[0m [32m INFO[0m [1;32mvalidator::validator[0m[32m: [32mValidator has not announced signature storage location, [1;32mannounced_locations[0m[32m: [][0m
+    [2;3mat[0m agents/validator/src/validator.rs:419
+
+  [2m2025-10-31T09:59:35.436421Z[0m [32m INFO[0m [1;32mvalidator::validator[0m[32m: [32mAttempting self announce, [1;32meth_validator_address[0m[32m: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, [1;32mchain_signer[0m[32m: "4f0b4c4c23e31f3e5bcceffb649afde964b7df50"[0m
+    [2;3mat[0m agents/validator/src/validator.rs:429
+
+  [2m2025-10-31T09:59:35.602287Z[0m [31mERROR[0m [1;31mhyperlane_ethereum::rpc_clients[0m[31m: [31mNon-retryable JsonRpcError in http provider, [1;31merror[0m[31m: (code: 3, message: execution reverted: !signature, data: Some(String("0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a217369676e617475726500000000000000000000000000000000000000000000")))[0m
+    [2;3mat[0m chains/hyperlane-ethereum/src/rpc_clients/mod.rs:89
+    [2;3min[0m hyperlane_ethereum::rpc_clients::fallback::[1mfallback_request[0m [2;3mwith[0m [1mfallback_count[0m: 0, [1mprovider_index[0m: 0, [1mprovider[0m: PrometheusJsonRpcClient(Http { id: 7, url: https://rpc.kasplextest.xyz/ })
+    [2;3min[0m hyperlane_ethereum::rpc_clients::fallback::[1mrequest[0m [2;3mwith[0m [1mmethod[0m: "eth_estimateGas"
+    [2;3min[0m hyperlane_ethereum::contracts::validator_announce::[1mannounce_tokens_needed[0m [2;3mwith[0m [1mannouncement[0m: SignedType { value: Announcement { validator: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, mailbox_address: 0x000000000000000000000000c505a8b225d46eb5252d96549c074e70855fe4f3, mailbox_domain: 167012, storage_location: file:///app/hyperlane-validator-signatures-kasplextestnet }, signature: 0xf574a2dc4ccf29ded936bb524c470e97dac86d1ce0c181ade4e23a9410bddc8b68b4e37314da8551f9d422c985e0137ae5d924cdd5030e79d0381a8e6b84396b1c }
+
+  [2m2025-10-31T09:59:35.602481Z[0m [32m INFO[0m [1;32mhyperlane_ethereum::contracts::validator_announce[0m[32m: [1;32mreturn[0m[32m: None[0m
+    [2;3mat[0m chains/hyperlane-ethereum/src/contracts/validator_announce.rs:152
+    [2;3min[0m hyperlane_ethereum::contracts::validator_announce::[1mannounce_tokens_needed[0m [2;3mwith[0m [1mannouncement[0m: SignedType { value: Announcement { validator: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, mailbox_address: 0x000000000000000000000000c505a8b225d46eb5252d96549c074e70855fe4f3, mailbox_domain: 167012, storage_location: file:///app/hyperlane-validator-signatures-kasplextestnet }, signature: 0xf574a2dc4ccf29ded936bb524c470e97dac86d1ce0c181ade4e23a9410bddc8b68b4e37314da8551f9d422c985e0137ae5d924cdd5030e79d0381a8e6b84396b1c }
+
+  [2m2025-10-31T09:59:35.790818Z[0m [31mERROR[0m [1;31mhyperlane_ethereum::rpc_clients[0m[31m: [31mNon-retryable JsonRpcError in http provider, [1;31merror[0m[31m: (code: 3, message: execution reverted: !signature, data: Some(String("0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a217369676e617475726500000000000000000000000000000000000000000000")))[0m
+    [2;3mat[0m chains/hyperlane-ethereum/src/rpc_clients/mod.rs:89
+    [2;3min[0m hyperlane_ethereum::rpc_clients::fallback::[1mfallback_request[0m [2;3mwith[0m [1mfallback_count[0m: 0, [1mprovider_index[0m: 0, [1mprovider[0m: PrometheusJsonRpcClient(Http { id: 8, url: https://rpc.kasplextest.xyz/ })
+    [2;3min[0m hyperlane_ethereum::rpc_clients::fallback::[1mrequest[0m [2;3mwith[0m [1mmethod[0m: "eth_estimateGas"
+    [2;3min[0m hyperlane_ethereum::contracts::validator_announce::[1mannounce[0m [2;3mwith[0m [1mannouncement[0m: SignedType { value: Announcement { validator: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, mailbox_address: 0x000000000000000000000000c505a8b225d46eb5252d96549c074e70855fe4f3, mailbox_domain: 167012, storage_location: file:///app/hyperlane-validator-signatures-kasplextestnet }, signature: 0xf574a2dc4ccf29ded936bb524c470e97dac86d1ce0c181ade4e23a9410bddc8b68b4e37314da8551f9d422c985e0137ae5d924cdd5030e79d0381a8e6b84396b1c }
+
+  [2m2025-10-31T09:59:35.790890Z[0m [31mERROR[0m [1;31mhyperlane_ethereum::contracts::validator_announce[0m[31m: [1;31merror[0m[31m: (code: 3, message: execution reverted: !signature, data: Some(String("0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a217369676e617475726500000000000000000000000000000000000000000000")))[0m
+    [2;3mat[0m chains/hyperlane-ethereum/src/contracts/validator_announce.rs:174
+    [2;3min[0m hyperlane_ethereum::contracts::validator_announce::[1mannounce[0m [2;3mwith[0m [1mannouncement[0m: SignedType { value: Announcement { validator: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, mailbox_address: 0x000000000000000000000000c505a8b225d46eb5252d96549c074e70855fe4f3, mailbox_domain: 167012, storage_location: file:///app/hyperlane-validator-signatures-kasplextestnet }, signature: 0xf574a2dc4ccf29ded936bb524c470e97dac86d1ce0c181ade4e23a9410bddc8b68b4e37314da8551f9d422c985e0137ae5d924cdd5030e79d0381a8e6b84396b1c }
+
+  [2m2025-10-31T09:59:35.790910Z[0m [31mERROR[0m [1;31mvalidator::validator[0m[31m: [31mFailed to announce validator. Make sure you have enough funds in your account to pay for gas., [1;31merr[0m[31m: ContractError(MiddlewareError(MiddlewareError(MiddlewareError(MiddlewareError(MiddlewareError(JsonRpcClientError(JsonRpcError(JsonRpcError { code: 3, message: "execution reverted: !signature", data: Some(String("0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a217369676e617475726500000000000000000000000000000000000000000000")) })))))))), [1;31mchain_signer[0m[31m: "4f0b4c4c23e31f3e5bcceffb649afde964b7df50"[0m
+    [2;3mat[0m agents/validator/src/validator.rs:363
+
+  [2m2025-10-31T09:59:40.792082Z[0m [32m INFO[0m [1;32mvalidator::validator[0m[32m: [32mChecking for validator announcement[0m
+    [2;3mat[0m agents/validator/src/validator.rs:401
+
+  [2m2025-10-31T09:59:40.955637Z[0m [32m INFO[0m [1;32mvalidator::validator[0m[32m: [32mValidator has not announced signature storage location, [1;32mannounced_locations[0m[32m: [][0m
+    [2;3mat[0m agents/validator/src/validator.rs:419
+
+  [2m2025-10-31T09:59:40.955828Z[0m [32m INFO[0m [1;32mvalidator::validator[0m[32m: [32mAttempting self announce, [1;32meth_validator_address[0m[32m: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, [1;32mchain_signer[0m[32m: "4f0b4c4c23e31f3e5bcceffb649afde964b7df50"[0m
+    [2;3mat[0m agents/validator/src/validator.rs:429
+
+  [2m2025-10-31T09:59:41.118680Z[0m [31mERROR[0m [1;31mhyperlane_ethereum::rpc_clients[0m[31m: [31mNon-retryable JsonRpcError in http provider, [1;31merror[0m[31m: (code: 3, message: execution reverted: !signature, data: Some(String("0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a217369676e617475726500000000000000000000000000000000000000000000")))[0m
+    [2;3mat[0m chains/hyperlane-ethereum/src/rpc_clients/mod.rs:89
+    [2;3min[0m hyperlane_ethereum::rpc_clients::fallback::[1mfallback_request[0m [2;3mwith[0m [1mfallback_count[0m: 0, [1mprovider_index[0m: 0, [1mprovider[0m: PrometheusJsonRpcClient(Http { id: 10, url: https://rpc.kasplextest.xyz/ })
+    [2;3min[0m hyperlane_ethereum::rpc_clients::fallback::[1mrequest[0m [2;3mwith[0m [1mmethod[0m: "eth_estimateGas"
+    [2;3min[0m hyperlane_ethereum::contracts::validator_announce::[1mannounce_tokens_needed[0m [2;3mwith[0m [1mannouncement[0m: SignedType { value: Announcement { validator: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, mailbox_address: 0x000000000000000000000000c505a8b225d46eb5252d96549c074e70855fe4f3, mailbox_domain: 167012, storage_location: file:///app/hyperlane-validator-signatures-kasplextestnet }, signature: 0xf574a2dc4ccf29ded936bb524c470e97dac86d1ce0c181ade4e23a9410bddc8b68b4e37314da8551f9d422c985e0137ae5d924cdd5030e79d0381a8e6b84396b1c }
+
+  [2m2025-10-31T09:59:41.118805Z[0m [32m INFO[0m [1;32mhyperlane_ethereum::contracts::validator_announce[0m[32m: [1;32mreturn[0m[32m: None[0m
+    [2;3mat[0m chains/hyperlane-ethereum/src/contracts/validator_announce.rs:152
+    [2;3min[0m hyperlane_ethereum::contracts::validator_announce::[1mannounce_tokens_needed[0m [2;3mwith[0m [1mannouncement[0m: SignedType { value: Announcement { validator: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, mailbox_address: 0x000000000000000000000000c505a8b225d46eb5252d96549c074e70855fe4f3, mailbox_domain: 167012, storage_location: file:///app/hyperlane-validator-signatures-kasplextestnet }, signature: 0xf574a2dc4ccf29ded936bb524c470e97dac86d1ce0c181ade4e23a9410bddc8b68b4e37314da8551f9d422c985e0137ae5d924cdd5030e79d0381a8e6b84396b1c }
+
+  [2m2025-10-31T09:59:41.282147Z[0m [31mERROR[0m [1;31mhyperlane_ethereum::rpc_clients[0m[31m: [31mNon-retryable JsonRpcError in http provider, [1;31merror[0m[31m: (code: 3, message: execution reverted: !signature, data: Some(String("0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a217369676e617475726500000000000000000000000000000000000000000000")))[0m
+    [2;3mat[0m chains/hyperlane-ethereum/src/rpc_clients/mod.rs:89
+    [2;3min[0m hyperlane_ethereum::rpc_clients::fallback::[1mfallback_request[0m [2;3mwith[0m [1mfallback_count[0m: 0, [1mprovider_index[0m: 0, [1mprovider[0m: PrometheusJsonRpcClient(Http { id: 11, url: https://rpc.kasplextest.xyz/ })
+    [2;3min[0m hyperlane_ethereum::rpc_clients::fallback::[1mrequest[0m [2;3mwith[0m [1mmethod[0m: "eth_estimateGas"
+    [2;3min[0m hyperlane_ethereum::contracts::validator_announce::[1mannounce[0m [2;3mwith[0m [1mannouncement[0m: SignedType { value: Announcement { validator: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, mailbox_address: 0x000000000000000000000000c505a8b225d46eb5252d96549c074e70855fe4f3, mailbox_domain: 167012, storage_location: file:///app/hyperlane-validator-signatures-kasplextestnet }, signature: 0xf574a2dc4ccf29ded936bb524c470e97dac86d1ce0c181ade4e23a9410bddc8b68b4e37314da8551f9d422c985e0137ae5d924cdd5030e79d0381a8e6b84396b1c }
+
+  [2m2025-10-31T09:59:41.282239Z[0m [31mERROR[0m [1;31mhyperlane_ethereum::contracts::validator_announce[0m[31m: [1;31merror[0m[31m: (code: 3, message: execution reverted: !signature, data: Some(String("0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a217369676e617475726500000000000000000000000000000000000000000000")))[0m
+    [2;3mat[0m chains/hyperlane-ethereum/src/contracts/validator_announce.rs:174
+    [2;3min[0m hyperlane_ethereum::contracts::validator_announce::[1mannounce[0m [2;3mwith[0m [1mannouncement[0m: SignedType { value: Announcement { validator: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, mailbox_address: 0x000000000000000000000000c505a8b225d46eb5252d96549c074e70855fe4f3, mailbox_domain: 167012, storage_location: file:///app/hyperlane-validator-signatures-kasplextestnet }, signature: 0xf574a2dc4ccf29ded936bb524c470e97dac86d1ce0c181ade4e23a9410bddc8b68b4e37314da8551f9d422c985e0137ae5d924cdd5030e79d0381a8e6b84396b1c }
+
+  [2m2025-10-31T09:59:41.282262Z[0m [31mERROR[0m [1;31mvalidator::validator[0m[31m: [31mFailed to announce validator. Make sure you have enough funds in your account to pay for gas., [1;31merr[0m[31m: ContractError(MiddlewareError(MiddlewareError(MiddlewareError(MiddlewareError(MiddlewareError(JsonRpcClientError(JsonRpcError(JsonRpcError { code: 3, message: "execution reverted: !signature", data: Some(String("0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a217369676e617475726500000000000000000000000000000000000000000000")) })))))))), [1;31mchain_signer[0m[31m: "4f0b4c4c23e31f3e5bcceffb649afde964b7df50"[0m
+    [2;3mat[0m agents/validator/src/validator.rs:363
+
+docker stop validator-kasplex 2>/dev/null; echo "Let me test manual announcement..."
+  [2m2025-10-31T09:59:46.283588Z[0m [32m INFO[0m [1;32mvalidator::validator[0m[32m: [32mChecking for validator announcement[0m
+    [2;3mat[0m agents/validator/src/validator.rs:401
+
+  [2m2025-10-31T09:59:46.446670Z[0m [32m INFO[0m [1;32mvalidator::validator[0m[32m: [32mValidator has not announced signature storage location, [1;32mannounced_locations[0m[32m: [][0m
+    [2;3mat[0m agents/validator/src/validator.rs:419
+
+  [2m2025-10-31T09:59:46.446841Z[0m [32m INFO[0m [1;32mvalidator::validator[0m[32m: [32mAttempting self announce, [1;32meth_validator_address[0m[32m: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, [1;32mchain_signer[0m[32m: "4f0b4c4c23e31f3e5bcceffb649afde964b7df50"[0m
+    [2;3mat[0m agents/validator/src/validator.rs:429
+
+  [2m2025-10-31T09:59:46.613190Z[0m [31mERROR[0m [1;31mhyperlane_ethereum::rpc_clients[0m[31m: [31mNon-retryable JsonRpcError in http provider, [1;31merror[0m[31m: (code: 3, message: execution reverted: !signature, data: Some(String("0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a217369676e617475726500000000000000000000000000000000000000000000")))[0m
+    [2;3mat[0m chains/hyperlane-ethereum/src/rpc_clients/mod.rs:89
+    [2;3min[0m hyperlane_ethereum::rpc_clients::fallback::[1mfallback_request[0m [2;3mwith[0m [1mfallback_count[0m: 0, [1mprovider_index[0m: 0, [1mprovider[0m: PrometheusJsonRpcClient(Http { id: 14, url: https://rpc.kasplextest.xyz/ })
+    [2;3min[0m hyperlane_ethereum::rpc_clients::fallback::[1mrequest[0m [2;3mwith[0m [1mmethod[0m: "eth_estimateGas"
+    [2;3min[0m hyperlane_ethereum::contracts::validator_announce::[1mannounce_tokens_needed[0m [2;3mwith[0m [1mannouncement[0m: SignedType { value: Announcement { validator: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, mailbox_address: 0x000000000000000000000000c505a8b225d46eb5252d96549c074e70855fe4f3, mailbox_domain: 167012, storage_location: file:///app/hyperlane-validator-signatures-kasplextestnet }, signature: 0xf574a2dc4ccf29ded936bb524c470e97dac86d1ce0c181ade4e23a9410bddc8b68b4e37314da8551f9d422c985e0137ae5d924cdd5030e79d0381a8e6b84396b1c }
+
+  [2m2025-10-31T09:59:46.613282Z[0m [32m INFO[0m [1;32mhyperlane_ethereum::contracts::validator_announce[0m[32m: [1;32mreturn[0m[32m: None[0m
+    [2;3mat[0m chains/hyperlane-ethereum/src/contracts/validator_announce.rs:152
+    [2;3min[0m hyperlane_ethereum::contracts::validator_announce::[1mannounce_tokens_needed[0m [2;3mwith[0m [1mannouncement[0m: SignedType { value: Announcement { validator: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, mailbox_address: 0x000000000000000000000000c505a8b225d46eb5252d96549c074e70855fe4f3, mailbox_domain: 167012, storage_location: file:///app/hyperlane-validator-signatures-kasplextestnet }, signature: 0xf574a2dc4ccf29ded936bb524c470e97dac86d1ce0c181ade4e23a9410bddc8b68b4e37314da8551f9d422c985e0137ae5d924cdd5030e79d0381a8e6b84396b1c }
+
+  [2m2025-10-31T09:59:46.776262Z[0m [31mERROR[0m [1;31mhyperlane_ethereum::rpc_clients[0m[31m: [31mNon-retryable JsonRpcError in http provider, [1;31merror[0m[31m: (code: 3, message: execution reverted: !signature, data: Some(String("0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a217369676e617475726500000000000000000000000000000000000000000000")))[0m
+    [2;3mat[0m chains/hyperlane-ethereum/src/rpc_clients/mod.rs:89
+    [2;3min[0m hyperlane_ethereum::rpc_clients::fallback::[1mfallback_request[0m [2;3mwith[0m [1mfallback_count[0m: 0, [1mprovider_index[0m: 0, [1mprovider[0m: PrometheusJsonRpcClient(Http { id: 15, url: https://rpc.kasplextest.xyz/ })
+    [2;3min[0m hyperlane_ethereum::rpc_clients::fallback::[1mrequest[0m [2;3mwith[0m [1mmethod[0m: "eth_estimateGas"
+    [2;3min[0m hyperlane_ethereum::contracts::validator_announce::[1mannounce[0m [2;3mwith[0m [1mannouncement[0m: SignedType { value: Announcement { validator: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, mailbox_address: 0x000000000000000000000000c505a8b225d46eb5252d96549c074e70855fe4f3, mailbox_domain: 167012, storage_location: file:///app/hyperlane-validator-signatures-kasplextestnet }, signature: 0xf574a2dc4ccf29ded936bb524c470e97dac86d1ce0c181ade4e23a9410bddc8b68b4e37314da8551f9d422c985e0137ae5d924cdd5030e79d0381a8e6b84396b1c }
+
+  [2m2025-10-31T09:59:46.776357Z[0m [31mERROR[0m [1;31mhyperlane_ethereum::contracts::validator_announce[0m[31m: [1;31merror[0m[31m: (code: 3, message: execution reverted: !signature, data: Some(String("0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a217369676e617475726500000000000000000000000000000000000000000000")))[0m
+    [2;3mat[0m chains/hyperlane-ethereum/src/contracts/validator_announce.rs:174
+    [2;3min[0m hyperlane_ethereum::contracts::validator_announce::[1mannounce[0m [2;3mwith[0m [1mannouncement[0m: SignedType { value: Announcement { validator: 0x4f0b4c4c23e31f3e5bcceffb649afde964b7df50, mailbox_address: 0x000000000000000000000000c505a8b225d46eb5252d96549c074e70855fe4f3, mailbox_domain: 167012, storage_location: file:///app/hyperlane-validator-signatures-kasplextestnet }, signature: 0xf574a2dc4ccf29ded936bb524c470e97dac86d1ce0c181ade4e23a9410bddc8b68b4e37314da8551f9d422c985e0137ae5d924cdd5030e79d0381a8e6b84396b1c }
+
+  [2m2025-10-31T09:59:46.776403Z[0m [31mERROR[0m [1;31mvalidator::validator[0m[31m: [31mFailed to announce validator. Make sure you have enough funds in your account to pay for gas., [1;31merr[0m[31m: ContractError(MiddlewareError(MiddlewareError(MiddlewareError(MiddlewareError(MiddlewareError(JsonRpcClientError(JsonRpcError(JsonRpcError { code: 3, message: "execution reverted: !signature", data: Some(String("0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a217369676e617475726500000000000000000000000000000000000000000000")) })))))))), [1;31mchain_signer[0m[31m: "4f0b4c4c23e31f3e5bcceffb649afde964b7df50"[0m
+    [2;3mat[0m agents/validator/src/validator.rs:363
+
+^C

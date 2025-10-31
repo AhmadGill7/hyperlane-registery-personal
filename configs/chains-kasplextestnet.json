@@ -1,17 +1,21 @@
 {
-  "kasplextestnet": {
-    "name": "kasplextestnet",
-    "chainId": 167012,
-    "domainId": 167012,
-    "protocol": "ethereum",
-    "rpcUrls": [
-      {
-        "http": "https://rpc.kasplextest.xyz"
-      }
-    ],
-    "mailbox": "0xC505a8B225D46eB5252D96549C074e70855Fe4F3",
-    "interchainGasPaymaster": "0x69fF361BE6dBD5B7F040E7656d3E9f01063B2f2a",
-    "validatorAnnounce": "0xc16287c8880c9Ab8b542846d321ec2DC90EF6993",
-    "merkleTreeHook": "0xAC9c2c6F90B60FDe2794EeCe06dE6a51CF3Ad3fc"
-  }
+    "kasplextestnet": {
+        "name": "kasplextestnet",
+        "chainId": 167012,
+        "domainId": 167012,
+        "protocol": "ethereum",
+        "rpcUrls": [
+            {
+                "http": "https://rpc.kasplextest.xyz"
+            }
+        ],
+        "mailbox": "0xC505a8B225D46eB5252D96549C074e70855Fe4F3",
+        "interchainGasPaymaster": "0x69fF361BE6dBD5B7F040E7656d3E9f01063B2f2a",
+        "validatorAnnounce": "0xc16287c8880c9Ab8b542846d321ec2DC90EF6993",
+        "merkleTreeHook": "0xAC9c2c6F90B60FDe2794EeCe06dE6a51CF3Ad3fc",
+        "storageGasOracle": "0x4e35Ca6865ea4F113Ec3b1a8353eb66b6Aa1c1Ca",
+        "proxyAdmin": "0x0FB4492F2214b72aC6bd7561317f1613e7542Bd5",
+        "interchainSecurityModule": "0x8E9C4947bf2249171d1C75118c362B37fEcC4E5C",
+        "interchainAccountRouter": "0x07a28475d982f7BC54342F3EdC7e0D48204D7447"
+    }
 }

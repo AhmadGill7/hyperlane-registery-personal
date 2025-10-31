@@ -28,3 +28,4 @@ yarn-error.log*
 # build artifacts
 dist
 tmp
+*-config.json

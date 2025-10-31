@@ -12,7 +12,7 @@
       ],
       "mailbox": "0xC505a8B225D46eB5252D96549C074e70855Fe4F3",
       "interchainGasPaymaster": "0x69fF361BE6dBD5B7F040E7656d3E9f01063B2f2a",
-      "validatorAnnounce": "0xc16287c8880c9Ab8b542846d321ec2DC90EF6993",
+      "validatorAnnounce": "0x71E663B5669AD70Ee9109B994F11E66Cb66e19F3",
       "merkleTreeHook": "0xAC9c2c6F90B60FDe2794EeCe06dE6a51CF3Ad3fc",
       "interchainSecurityModule": "0x8E9C4947bf2249171d1C75118c362B37fEcC4E5C"
     }
